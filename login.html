@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOGIN｜Fictional Blog</title>
+
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+
+  <div class="login-box">
+    <h1>AUTHENTICATION</h1>
+
+    <p class="login-text">
+      この先の記録は<br>
+      閲覧が制限されています
+    </p>
+
+    <form action="index.html">
+      <label for="id">USER ID</label>
+      <input
+        type="text"
+        id="id"
+        name="id"
+        placeholder="ENTER ID"
+        pattern="suzuki"
+        required
+        autocomplete="off"
+      >
+
+      <label for="password">PASSWORD</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="********"
+        pattern="letgo"
+        required
+      >
+
+      <button type="submit" class="enter-btn">ENTER</button>
+    </form>
+
+    <div class="warning">
+      <span class="glitch-word" data-text="見てはいけない">
+        見てはいけない
+      </span><br>
+      情報にアクセスする可能性があります
+    </div>
+  </div>
+
+</body>
+</html>
